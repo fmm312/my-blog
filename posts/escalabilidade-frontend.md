@@ -1,8 +1,8 @@
 ---
-title: "Hello World"
-date: "25/11/2021"
+title: "Princípios de escalabilidade em projetos Front-end"
+date: "Jul 11, 2021"
 time: "5"
-description: "Found 99 vulnerabilities (84 moderately irrelevant, 15 highly irrelevant)"
+description: "Breve abordagem de conceitos fundamentais para construir projetos Front-end escaláveis e sustentáveis."
 ---
 
 ## Mors tollit

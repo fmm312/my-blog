@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding: 50px 0;
   font-family: 'Montserrat', sans-serif;
-  max-width: 530px;
+  max-width: 630px;
   margin: 0 auto;
 }
 
@@ -32,10 +32,13 @@
   flex-direction: column;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+  max-width: 630px;
+  margin: 0 auto;
 }
 
 .postList {
   list-style: none;
+  padding: 0;
 }
 
 .postList > li {
@@ -59,12 +62,13 @@
 .postDescription {
   font-size: 16px;
   margin-top: 10px;
+  line-height: 25px;
 }
 
 /* Article styles */
 .article {
   font-family: 'Montserrat', sans-serif;
-  max-width: 530px;
+  max-width: 630px;
   margin-bottom: 50px;
 }
 
