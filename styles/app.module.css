@@ -1,0 +1,111 @@
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 530px;
+  margin: 0 auto;
+}
+
+.header :first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header :nth-child(2) > p {
+  margin: 8px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-image: url('/avatar.jpeg');
+  background-size: cover;
+}
+
+/* Feed styles */
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.postList {
+  list-style: none;
+}
+
+.postList > li {
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.postTitle {
+  color: #4385F4;
+  font-size: 28px;
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+.postDate {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.postDescription {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Article styles */
+.article {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 530px;
+  margin-bottom: 50px;
+}
+
+.acticleTitle {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 0;
+  color: #4385F4;
+}
+
+.spacing {
+  margin: 50px;
+}
+
+.goBackLink {
+  color: #4385F4;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.link {
+  font-family: 'Montserrat', sans-serif;
+  color: #4385F4;
+  text-decoration: none;
+  border-bottom: 1px solid #4385F4;
+  padding-bottom: 1px;
+}
+
+.link:hover {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
