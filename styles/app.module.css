@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 20px;
   font-family: 'Montserrat', sans-serif;
   max-width: 630px;
   margin: 0 auto;
@@ -41,7 +41,7 @@
 
 .subheader {
   display: flex;
-  padding: 10px 0 50px 0;
+  padding: 0 0 50px 0;
   font-family: 'Montserrat', sans-serif;
   max-width: 630px;
   margin: 0 auto;

@@ -1,7 +1,7 @@
 ---
 title: "Princípios de escalabilidade em projetos Front-end"
 date: "Jul 11, 2021"
-time: "5"
+time: "9"
 description: "Breve abordagem de conceitos fundamentais para construir projetos Front-end escaláveis e sustentáveis."
 ---
 
