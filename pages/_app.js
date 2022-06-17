@@ -1,10 +1,16 @@
 import Head from "next/head";
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'; 
+import { BiWorld } from 'react-icons/bi';
 import Switch from "react-switch";
 import Link from "next/link";
 
 import styles from '././../styles/app.module.css';
 
 function MyApp({ Component, pageProps }) {
+  function goToSocialChannel(url) {
+    window.open(url, "_blank");
+  }
+
   return (
     <>
       <Head>
@@ -13,47 +19,50 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <header className={styles.header}>
+        <Link href="/">
+          <p><span>console</span>.log( )</p>
+        </Link>
+
+        <div>
+          <AiFillGithub 
+            className={styles.socialIcon}
+            onClick={() => goToSocialChannel('https://github.com/fmm312')}
+          />
+          <BiWorld
+            onClick={() => goToSocialChannel('https://felipedeveloper.vercel.app/')}
+            className={styles.socialIcon} 
+          />
+          <AiFillLinkedin
+            onClick={() => goToSocialChannel('https://www.linkedin.com/in/felipemenezesmagalhaes/')}
+            className={styles.socialIcon} 
+          />
+
+          {/* <Switch  /> */}
+        </div>
+      </header>
+
+      <div className={styles.subheader}>
         <div>
           <div className={styles.avatar} />
 
           <div>
             <p>Blog pessoal do
-              <Link href="/" >
-                <a className={styles.link} style={{ position: 'relative', right: 5 }}>
-                  <b>Felipe Menezes.</b>
-                </a>
-              </Link>
+              <a 
+                className={styles.link} 
+                style={{ position: 'relative', right: 5, cursor: 'pointer' }}
+                onClick={() => goToSocialChannel('https://www.linkedin.com/in/felipemenezesmagalhaes/')}
+              >
+                <b>Felipe Menezes.</b>
+              </a>
             </p>
             <p>Escrevo sobre programação.</p>
           </div>
-        </div>
-
-        {/* <Switch  /> */}
-      </header>
+        </div>        
+      </div>
 
       <main className={styles.feed}>
         <Component {...pageProps} />
       </main>
-
-      {/* <footer className={styles.footer}>
-        <Link href="/">
-          <a className={styles.link}>
-            linkedin
-          </a>
-        </Link> •
-
-        <Link href="/">
-          <a className={styles.link}>
-            github
-          </a>
-        </Link> •
-
-        <Link href="/">
-          <a className={styles.link}>
-            site
-          </a>
-        </Link>
-      </footer> */}
     </>
   );
 }

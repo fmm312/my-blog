@@ -1,21 +1,62 @@
-/* Header styles */
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  align-items: center;
+  padding-top: 40px;
   font-family: 'Montserrat', sans-serif;
   max-width: 630px;
   margin: 0 auto;
 }
 
-.header :first-child {
+.header p {
+  font-size: 34px;
+  font-weight: 900;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 0.3px;
+  color: #222228;
+}
+
+.header span {
+  font-size: 34px;
+  font-weight: 900;
+  color: #4385F4;
+  /* border: 3px solid #4385F4;
+  padding: 4px;
+  margin-right: 3px;
+  border-radius: 2px; */
+  letter-spacing: 0.3px;
+}
+
+.header >div {
+  display: flex;
+  gap: 10px;
+}
+
+.header .socialIcon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #222228;
+}
+
+.subheader {
+  display: flex;
+  padding: 10px 0 50px 0;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 630px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.subheader :first-child {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.header :nth-child(2) > p {
+.subheader :nth-child(2) > p {
   margin: 8px;
+  color: #222228;
 }
 
 .avatar {
@@ -26,7 +67,6 @@
   background-size: cover;
 }
 
-/* Feed styles */
 .feed {
   display: flex;
   flex-direction: column;
@@ -65,7 +105,6 @@
   line-height: 25px;
 }
 
-/* Article styles */
 .article {
   font-family: 'Montserrat', sans-serif;
   max-width: 630px;
